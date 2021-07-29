@@ -35,3 +35,22 @@ print(a)
 a.pop()
 # pop()=pop_back()
 print(a)
+a.remove(b)
+# 列表中内容重复,删除的时候删除对应内容下标较小的那个
+# a.remove(10) 输入不存在的数据会报错,抛出异常
+# 删除的是元素内容
+print(a)
+if 'q' in a:
+    print("exist")
+else:
+    print("cannot find!")
+print(a.index(1, 0, len(a)))
+# 范围区间左闭右开,不包含结尾数字的对应下标的元素
+print(a.count(1))
+a.insert(3, 0)
+a.insert(0, 4)
+a.insert(0, 8)
+a.sort()
+print(a)
+a.sort(reverse=True)
+print(a)
