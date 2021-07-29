@@ -27,3 +27,11 @@ print(a)
 a.extend(b)
 # extend 为扩展,将a中插入b中所有的单个元素
 print(a)
+a.insert(0, 'see')
+# insert(int pos,template<class T> T object)
+print(a)
+del a[0]
+print(a)
+a.pop()
+# pop()=pop_back()
+print(a)
