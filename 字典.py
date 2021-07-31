@@ -13,3 +13,9 @@ del info
 info = {"name": "jifeng", "age": "19"}
 info.clear()
 print(info)  # 清空字典内容,将该字典仍然保留在内存中 del是从内存中删除
+info = {"name": "jifeng", "age": "19"}
+print(info.items())
+print(info.keys())
+print(info.values())
+for key, value in info.items():  # 循环中可以有两个数值
+    print(key, "\t", value)
