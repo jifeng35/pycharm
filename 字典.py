@@ -4,6 +4,7 @@ print(info["name"])
 print(info.get("hobby"))  # 默认返回值是None,可更改默认返回值
 print(info.get("hobby", "basketball"))
 info["id"] = "2020212265"  # 字典此种数据结构类似c++中的pair数据结构 通过key值索引value
+# 增添内容方式与修改value内容方式相同,赋值即可
 print(info.get("id"))
 del info["id"]
 print(info.get("id"))
