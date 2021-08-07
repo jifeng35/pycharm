@@ -16,7 +16,13 @@ try:
     print(content.getheaders())
 except err.URLError as e:
     print("Time out!\n", e)
-
-
+url = "https://www.douban.com"
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/92.0.4515.107 Safari/537.36 Edg/92.0.902.62"}
+data = bytes(par.urlencode({'name': 'jifeng'}), encoding='utf-8')
+requ = req.Request(url=url, data=data, headers=headers, method="POST")
+content = req.urlopen(requ)
+print(content.read().decode("utf-8"))
 # Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
 # Chrome/92.0.4515.107 Safari/537.36 Edg/92.0.902.62
